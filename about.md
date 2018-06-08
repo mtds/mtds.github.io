@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-This is repo to host my posts on Github using Jekyll.
+This website will host my posts on Github Pages.
 
