@@ -35,6 +35,15 @@ plugins:
 permalink: /:year/:month/:day/:title/
 paginate: 5
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
 exclude:
   - Gemfile
   - Gemfile.lock
