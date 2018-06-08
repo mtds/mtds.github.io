@@ -24,6 +24,8 @@ remote_theme: yous/whiteglass
 gems:
   - jekyll-feed
   - jekyll-gist
+plugins:
+  - jekyll-remote-theme
 exclude:
   - Gemfile
   - Gemfile.lock
