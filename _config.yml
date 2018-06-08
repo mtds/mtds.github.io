@@ -20,7 +20,7 @@ github_username: mtds
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: yous / whiteglass
 gems:
   - jekyll-feed
   - jekyll-gist
