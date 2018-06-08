@@ -14,6 +14,7 @@ gem "minima", "~> 2.0"
 # The following gem has to be used whenever we build the website to
 # be hosted on Github. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
