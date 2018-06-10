@@ -23,11 +23,9 @@ markdown: kramdown
 
 remote_theme: yous/whiteglass
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-gist
-
-plugins:
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
