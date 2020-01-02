@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby "~> 2.4.4"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -23,5 +23,8 @@ group :jekyll_plugins do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Deal with command injection vulnerability in Nokogiri v1.10.3 and earlier versons
+# (https://github.com/advisories/GHSA-cr5j-953j-xw5p)
+gem "nokogiri", ">= 1.10.4"
