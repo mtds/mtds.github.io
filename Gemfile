@@ -15,6 +15,7 @@ gem "minima", "~> 2.0"
 # be hosted on Github. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
+gem "faraday", "0.17.3" # see https://github.com/octokit/octokit.rb/issues/1155
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
