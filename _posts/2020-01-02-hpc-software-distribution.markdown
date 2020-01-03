@@ -18,7 +18,7 @@ The following is a list that (to the best of my knowledge) summarize as much as
 possible the available choices for both tasks.
 
 **NOTE**: for the sake of simplicity I am only considering GNU/Linux based installations,
-on _x86_ hardware environments altough some of this methods can be applied on _ARM_ based
+on _x86_ hardware environments altough some of these methods can be applied on _ARM_ based
 clusters. Very specific hardware/software combinations (e.g. _Cray_) are also not considered 
 here.
 
