@@ -26,6 +26,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Deal with command injection vulnerability in Nokogiri v1.10.3 and earlier versons
-# (https://github.com/advisories/GHSA-cr5j-953j-xw5p)
-gem "nokogiri", ">= 1.10.4"
+# libxml as used in Nokogiri has an infinite loop in a certain end-of-file situation (CVE-2020-7595)
+# (https://github.com/advisories/GHSA-7553-jr98-vx47)
+gem "nokogiri", ">= 1.10.8"
