@@ -13,10 +13,19 @@ source "https://rubygems.org"
 # This is the default theme for new Jekyll sites.
 gem "minima", "~> 2.0"
 
-# The following gem has to be used whenever we build the website to
-# be hosted on Github. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll"
 gem "jekyll-remote-theme"
+
+# The following gems are required by _config.yml (plugins + remote theme).
+# They used to be pulled in transitively via the github-pages gem, which was
+# removed because it pins jekyll-remote-theme to 0.4.3, capping rubyzip at
+# < 3.0 (see CVE-2026-85396).
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "kramdown-parser-gfm"
+
+# Bump to 3.4.0+ to fix CVE-2026-85396 (path traversal in Zip::Entry#extract).
+gem "rubyzip", ">= 3.4.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
